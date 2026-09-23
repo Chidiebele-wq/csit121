@@ -1,0 +1,93 @@
+style.css
+/* 1. Body Selector - Sets a beautiful, clean professional deep blue background with highly readable crisp white text */
+body {
+    background-color: #0f2d59; /* Clear, rich deep royal blue */
+    color: #f1f5f9;            /* High-contrast crisp off-white text for perfect readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 30px;
+}
+
+/* 2. Headings Selector - Uses a bright coral accent color to stand out cleanly on the blue background */
+h1, h2, h3 {
+    color: #ff7e5f; /* Clean, modern orange-coral color that matches the example's vibe but is easier to read */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    border-bottom: 2px solid #ff7e5f;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+}
+
+/* 3. Paragraphs Selector */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #e2e8f0;
+}
+
+/* 4. Links Selector - Styles navigation links and resource links with clear bright cyan visibility */
+a {
+    color: #38bdf8; /* Bright cyan/light blue that is easily visible against dark blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #7dd3fc;
+}
+
+/* Specific styling for the list boxes seen in Picture 3 */
+ol {
+    border: 2px dashed #ff7e5f; /* Elegant dashed border around your "What I Learned" lists */
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle tinted background overlay to frame the box */
+    padding: 20px 20px 20px 40px;
+    margin: 15px 0;
+    border-radius: 6px;
+    max-width: 750px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+/* Navigation Menu layout styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* 5. Class Selector (.) - Styles your author info text block line */
+.author-meta {
+    font-style: italic;
+    color: #94a3b8; /* Muted gray-blue tone for metadata info text */
+    font-size: 0.95rem;
+}
+
+/* 6. ID Selector (#) - Targets your specific unique footer container layout */
+#footer-container {
+    margin-top: 50px;
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+}
+
+#footer-container p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
