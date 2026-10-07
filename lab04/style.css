@@ -1,0 +1,148 @@
+style.css
+
+css
+/* Reset basic elements for universal rendering consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base body configuration with background configuration wrapper */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222222;
+    background-image: url('images/cafe-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f4efe9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Semi-transparent semantic header element to protect text contrast */
+header {
+    background-color: rgba(44, 34, 25, 0.95);
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+/* Structural navigation list styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    color: #e6d7c3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Interactive pseudo-class hover states */
+nav a:hover {
+    background-color: #5c4331;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Unique structural formatting for current page anchor */
+nav a.current {
+    font-weight: bold;
+    background-color: #8c6239;
+    color: #ffffff;
+    border: 1px solid #e6d7c3;
+}
+
+/* Accessible and readable core page layout main frame container */
+main {
+    flex: 1;
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+main h2 {
+    color: #2c2219;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #8c6239;
+    padding-bottom: 0.5rem;
+}
+
+/* Scaled, fluid image blocks following assignment requirements */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    margin: 1.5rem auto;
+    border: 4px solid #2c2219;
+    border-radius: 4px;
+}
+
+/* Section elements split cleanly with high margins */
+section {
+    margin-bottom: 1.5rem;
+}
+
+main h3 {
+    color: #8c6239;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Link modifications inside the main text areas */
+main a {
+    color: #8c6239;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #2c2219;
+}
+
+/* Content wrapper block for sourcing details */
+main div {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #cccccc;
+    font-style: italic;
+}
+
+/* Sticky footer styling base configurations */
+footer {
+    background-color: #2c2219;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
