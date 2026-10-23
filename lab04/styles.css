@@ -1,0 +1,54 @@
+style.css
+* Shared Styles for Lab 04 */
+
+body {
+    background-image: url('images/clock-bg.jpg');
+    background-repeat: repeat;
+    background-color: blue; /* Super bright fallback color */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: red; /* Highly unpolished contrast choice */
+    padding: 10px;
+}
+
+header {
+    background-color: yellow;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: blue;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* Bold clunky highlight box for current page link */
+.current {
+    background-color: black;
+    color: white;
+}
+
+img {
+    border: 5px solid yellow;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+}
