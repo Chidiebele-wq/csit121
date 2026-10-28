@@ -1,0 +1,33 @@
+
+body {
+    background-color: #0000ff;
+    color: #222222;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+
+h1, h2, h3, .nav-bar a, .layout-btn {
+    color: #ff0000; 
+}
+
+
+ol, ul, .sidebar, .blog-post {
+    border: 1px dashed #222222;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+@media (min-width: 768px) {
+    .main-container {
+        display: flex;
+    }
+    .sidebar {
+        width: 25%;
+        margin-right: 20px;
+    }
+    .content-area {
+        width: 75%;
+    }
+}

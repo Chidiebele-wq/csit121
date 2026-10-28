@@ -1,0 +1,28 @@
+style.css
+/* lab 03 css */
+
+body {
+    background-color: blue;
+    color: white;
+}
+
+h1 {
+    color: yellow;
+    border-bottom: 1px solid white;
+}
+
+h2 {
+    color: yellow;
+}
+
+h3 {
+    color: yellow;
+}
+
+a {
+    color: yellow;
+}
+
+ol {
+    border: 2px dashed yellow;
+}
