@@ -1,0 +1,10 @@
+
+favicon.svg
+
+Create a text file with this exact XML content, naming it favicon.svg inside your root directory. It creates a vector coffee cup:
+xml
+<svg xmlns="http://w3.org" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="6" fill="#2c2219"/>
+  <path d="M9 11h11v8auto rx="2" fill="#e6d7c3" d="M9 11h11v7a4 4 0 0 1-4 4h-3a4 4 0 0 1-4-4v-7z"/>
+  <path d="M20 13h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v-6z" fill="none" stroke="#e6d7c3" stroke-width="2"/>
+</svg>
