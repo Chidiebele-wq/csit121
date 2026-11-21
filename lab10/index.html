@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Directory - Lab 10</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #ffff00; color: #000; }
+    header { background: #000; color: #ffff00; padding: 12px 15px; font-size: 24px; font-weight: bold; }
+    .sub { background: #0000ff; color: #fff; padding: 8px 15px; font-size: 14px; }
+    main { padding: 15px; }
+    h2 { color: #e60000; font-size: 18px; margin-top: 0; }
+    button { background: #0000ff; color: #fff; border: 2px solid #000; padding: 10px 20px; font-size: 16px; font-weight: bold; cursor: pointer; }
+    button:hover { background: #000; color: #ffff00; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; background: #fff; }
+    th, td { border: 1px solid #000; text-align: left; padding: 8px; }
+    th { background: #000; color: #ffff00; }
+    tr:nth-child(even) { background: #fff9a6; }
+  </style>
+</head>
+<body>
+  <header>employee xml directory</header>
+  <div class="sub">by: chidiebele jiabana</div>
+  <main>
+    <h2>1. employee records</h2>
+    <button type="button" id="toggleBtn" onclick="toggleData()">get employee data</button>
+    <table id="empTable"></table>
+  </main>
+  
+  <script>
+    function toggleData() {
+      const btn = document.getElementById("toggleBtn");
+      const table = document.getElementById("empTable");
+      if (table.innerHTML !== "") {
+        table.innerHTML = "";
+        btn.textContent = "get employee data";
+        return;
+      }
+      const xhr = new XMLHttpRequest();
+      xhr.onload = function () {
+        if (this.status === 200) {
+          const emps = this.responseXML.getElementsByTagName("employee");
+          let rows = "<tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Title</th><th>Division</th><th>Building</th><th>Room</th></tr>";
+          for (let e of emps) {
+            const val = tag => e.getElementsByTagName(tag)[0].textContent.trim();
+            rows += `<tr><td>${e.id}</td><td>${val("firstname")}</td><td>${val("lastname")}</td><td>${val("title")}</td><td>${val("division")}</td><td>${val("building")}</td><td>${val("room")}</td></tr>`;
+          }
+          table.innerHTML = rows;
+          btn.textContent = "close employee data";
+        }
+      };
+      xhr.open("GET", "employee.xml", true);
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
